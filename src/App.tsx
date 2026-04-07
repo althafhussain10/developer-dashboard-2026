@@ -77,7 +77,7 @@ function App() {
       {/* Navigation */}
       <nav className="bg-white border-b border-gray-200">
         <div className="px-6">
-          <div className="flex gap-1">
+          <div className="flex flex-col sm:flex-row gap-1 w-full">
             {['overview', 'analytics', 'database', 'api', 'monitoring'].map((tab) => (
               <button
                 key={tab}
@@ -245,6 +245,11 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer>
+        <p className="text-center text-gray-500 text-sm">Developed by Mohamed Althaf Hussain N</p>
+      </footer>
     </div>
   );
 }
